@@ -1,6 +1,6 @@
 {
   "name": "hugo-theme-demo-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper to build your hugo theme demo",
   "main": "index.js",
   "scripts": {
