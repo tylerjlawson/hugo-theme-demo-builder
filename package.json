@@ -1,0 +1,27 @@
+{
+  "name": "hugo-theme-demo-builder",
+  "version": "1.0.0",
+  "description": "A helper to build your hugo theme demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerjlawson/hugo-theme-demo-builder.git"
+  },
+  "keywords": [
+    "hugo"
+  ],
+  "author": "tylerjlawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerjlawson/hugo-theme-demo-builder/issues"
+  },
+  "homepage": "https://github.com/tylerjlawson/hugo-theme-demo-builder#readme",
+  "dependencies": {
+    "concat-stream": "^2.0.0",
+    "shelljs": "^0.8.4",
+    "toml": "^3.0.0"
+  }
+}
