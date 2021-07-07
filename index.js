@@ -20,7 +20,12 @@ fs.createReadStream("../theme.toml", "utf8").pipe(
     const parsed = toml.parse(data);
     const themeURL = parsed.homepage;
     const themeURLSplit = parsed.homepage.split("/");
-    const themeName = themeURLSplit[themeURLSplit.length - 1];
+
+    // make sure homepage does not use .git in url
+    const themeName = themeURLSplit[themeURLSplit.length - 1].replace(
+      ".git",
+      ""
+    );
 
     if (!"demosite" in parsed) console.warn("Missing demourl in theme.toml");
 
