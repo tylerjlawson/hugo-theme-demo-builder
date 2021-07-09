@@ -18,7 +18,10 @@ try {
 fs.createReadStream("../theme.toml", "utf8").pipe(
   concat(function (data) {
     const parsed = toml.parse(data);
-    const themeURL = parsed.homepage;
+    let themeURL = parsed.homepage;
+    if (themeURL[themeURL.length - 1] === "/") {
+      themeURL = themeURL.substr(0, themeURL.length - 1);
+    }
     const themeURLSplit = parsed.homepage.split("/");
 
     // make sure homepage does not use .git in url
