@@ -22,7 +22,7 @@ fs.createReadStream("../theme.toml", "utf8").pipe(
     if (themeURL[themeURL.length - 1] === "/") {
       themeURL = themeURL.substr(0, themeURL.length - 1);
     }
-    const themeURLSplit = parsed.homepage.split("/");
+    const themeURLSplit = themeURL.split("/");
 
     // make sure homepage does not use .git in url
     const themeName = themeURLSplit[themeURLSplit.length - 1].replace(
